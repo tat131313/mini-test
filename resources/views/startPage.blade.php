@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="icon" href="{{asset('img/favicon.ico')}}">
     
     <title>Start page</title>
 
@@ -20,8 +20,7 @@
 
   <body class="text-center">
     <form class="form-signin">
-      <!--<img class="mb-4" src="../../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">-->
-      <!--<img src="../../../public/img/test.jpg"/>-->
+      <img class="mb-4" src="{{asset('img/test.png')}}" alt="" width="130" height="72"/>
       <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
       <label for="inputName" class="sr-only">Name</label>
       <input type="text" id="inputName" class="form-control" placeholder="Name" required autofocus>
