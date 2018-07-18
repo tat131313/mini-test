@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class user extends Model
 {
-    //
+    public static function enterName() {
+        echo "app::user...";
+    }
 }

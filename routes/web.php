@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('startPage');
 });
+
+Route::get('/user', 'UserController@enter', function () {
+    return view('startPage');
+});
