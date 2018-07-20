@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="{{asset('img/favicon.ico')}}">
     
-    <title>Start page</title>
+    <title>Test page</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
@@ -19,16 +18,6 @@
   </head>
 
   <body class="text-center">
-    <form action="{{route('send-data')}}" method="post" class="form-signin">
-      @csrf
-      ...
-      <img class="mb-4" src="{{asset('img/test.png')}}" alt="" width="130" height="72"/>
-      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-      <label for="inputName" class="sr-only">Name</label>
-      <input type="text" id="inputName" class="form-control" placeholder="Name" required autofocus>
-      <br>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Start a test</button>
-    </form>
+    <?= "Test" ?>
   </body>
 </html>
-

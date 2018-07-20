@@ -6,12 +6,13 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function show() {
+    public function show() { 
         return view('startPage');
     }
 
     public function getUsername() {
-        echo "userName";
-        return redirect('/');   // read about redirect
+        //echo "userName";
+        return view('test');
+        //return header ('Location: /send-data');   // read about redirect
     }
 }
