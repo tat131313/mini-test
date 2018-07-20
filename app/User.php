@@ -4,9 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class user extends Model
+class User extends Model
 {
-    public static function enterName() {
-        echo "app::user...";
-    }
+
 }

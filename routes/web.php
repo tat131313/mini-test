@@ -11,10 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('startPage');
-});
+Route::get('/', 'UserController@show');
 
-Route::get('/user', 'UserController@enter', function () {
-    return view('startPage');
-});
+Route::post('send-data', 'UserController@getUsername') -> name('send-data');
+
