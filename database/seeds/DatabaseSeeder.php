@@ -14,3 +14,11 @@ class DatabaseSeeder extends Seeder
         // $this->call(UsersTableSeeder::class);
     }
 }
+
+/*class QuestionTableSeeder extends Seeder
+{
+    public function run()
+    {
+        DB::table('questions')->insert(['question'=>'PHP is ...']);
+    }
+}*/

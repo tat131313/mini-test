@@ -18,6 +18,6 @@
   </head>
 
   <body class="text-center">
-    <?= "Test" ?>
+    <?= '$name' ?>
   </body>
 </html>

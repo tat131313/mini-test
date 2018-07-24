@@ -21,11 +21,10 @@
   <body class="text-center">
     <form action="{{route('send-data')}}" method="post" class="form-signin">
       @csrf
-      ...
-      <img class="mb-4" src="{{asset('img/test.png')}}" alt="" width="130" height="72"/>
+      <img class="mb-4" src="{{asset('img/test.png')}}" alt="" width="120" height="72"/>
       <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
       <label for="inputName" class="sr-only">Name</label>
-      <input type="text" id="inputName" class="form-control" placeholder="Name" required autofocus>
+      <input type="text" id="inputName" name="inputName" class="form-control" placeholder="Name" required autofocus>
       <br>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Start a test</button>
     </form>
