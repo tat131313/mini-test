@@ -19,5 +19,7 @@ Route::post('send-data', 'UserController@getUsername') -> name('send-data');
 
 Route::get('test', 'QuestionController@showTest') -> name('test');
 
+//Route::get('test', 'QuestionController@showTest') -> name('test');
+
 Route::get('rating', 'UserController@showRating') -> name('rating');
 
