@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Contracts\Validation\ValidationException;
+use App\User;
 
 class UserController extends Controller
 {
@@ -27,17 +28,21 @@ class UserController extends Controller
             //$validation = Validator::make(Input::get(), $rules, $messages);
             $this->validate($request, $rules, $messages);
 
-            DB::table('users')->insert([
+            /*DB::table('users')->insert([
                 'user_name' => $request['name'],
-            ]);
-        }
-        
-        
-        
+            ]);*/
 
+            $user = new User;
+            $user->user_name = $request['name'];
+            $user->save(); 
+        }
 
         //sesion id_name
         //return view('test');
-        //return redirect;   // read about redirect
+        return redirect()->route('test');
+    }
+
+    public function showRating() {
+        echo "Rating";
     }
 }

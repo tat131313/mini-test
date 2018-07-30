@@ -18,6 +18,29 @@
   </head>
 
   <body class="text-center">
-    <?= '$name' ?>
+    <form method="post" action="/">
+      @csrf
+      <fieldset class="form-group">
+        <div>
+          <legend>
+            @foreach ($questions as $question)
+            {{$question->question}}
+            @endforeach
+          </legend>
+
+          <div>
+            @foreach ($answer as $answers)
+              <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+              <label class="form-check-label" for="gridRadios1">
+              {{$answers->answer}}
+              </label>
+              </div>
+            @endforeach
+          </div>
+        </div>
+      </fieldset>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+    </form>
   </body>
 </html>

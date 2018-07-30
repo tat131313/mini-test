@@ -15,5 +15,9 @@ Route::get('/', 'UserController@show');
 
 Route::post('send-data', 'UserController@getUsername') -> name('send-data');
 
-Route::post('test', 'QuestionController@showTest') -> name('test');
+//Route::match(['get', 'post'], 'test/{id?}', 'QuestionController@showTest') -> name('test');
+
+Route::get('test', 'QuestionController@showTest') -> name('test');
+
+Route::get('rating', 'UserController@showRating') -> name('rating');
 
