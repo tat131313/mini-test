@@ -23,21 +23,23 @@
       <fieldset class="form-group">
         <div>
           <legend>
-            @foreach ($questions as $question)
-            {{$question->question}}
+            @foreach ($tasks as $question)
+              @foreach ($question as $answer)
+                       {{$answer->question}}
+              @endforeach
             @endforeach
           </legend>
 
-          <div>
-            @foreach ($answer as $answers)
+          <!--<div>
+            @foreach ($tasks as $answer)
               <div class="form-check">
               <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
               <label class="form-check-label" for="gridRadios1">
-              {{$answers->answer}}
+              {{$answer->answer}}
               </label>
               </div>
             @endforeach
-          </div>
+          </div>-->
         </div>
       </fieldset>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>

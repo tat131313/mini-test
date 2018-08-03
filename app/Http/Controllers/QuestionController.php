@@ -53,6 +53,6 @@ class QuestionController extends Controller
             $id++;
         }
         dump($tasks);
-        //return view('test', ['questions' => $questions], ['answer' => $answers]);
+        return view('test', ['tasks' => $tasks]);
     }
 }
